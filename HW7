@@ -1,0 +1,10 @@
+class vv:
+    def __init__(self,n):
+        self.n = n
+    def __iter__(self):
+        for i in range(1, self.n+1):
+            yield i 
+n = 10
+c = vv(n)
+for num in c:
+    print(num)
